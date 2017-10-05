@@ -1,0 +1,35 @@
+
+	@media screen and (max-width: 1024px) {
+        .panel-row-style {
+            background-attachment: scroll !important;
+            background-position: center top !important;
+            -webkit-background-size: auto !important;
+            -moz-background-size: auto !important;
+            background-size: auto !important;
+        }
+    }
+        .parallax { 
+        /* The image used */
+        /* background-image: url("/assets/images/A.jpg"); */
+    
+        /* Set a specific height */
+        height: 500px; 
+        
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }.parallaxB { 
+        /* The image used */
+        /* background-image: url("images/B.jpg"); */
+    
+        /* Set a specific height */
+        height: 500px; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
