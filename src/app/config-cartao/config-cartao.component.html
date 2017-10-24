@@ -1,60 +1,424 @@
-<div class="container">
-    <div class="breadcrumbs">
-      <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-                <li><a href="Cartao.html">Cartao</a></li>
-        <li class="active">Configurar</li>
-      </ol>
-    </div>
-      <div id="contact-page" class="container" align="center">
-          <div>
-                 <span>
-  <h2 class="productinfo">ESCOLHA A FORMA DE CRIAR SEU PRODUTO: CARTÃO DE VISITA</h2>
-</span>
-          </div>
-          <div>
-               &nbsp;
-          </div>
-          <div class="alert-info btn-group-justified  fa fa-info-circle">
-        Nesta opção você pode encontrar três formas de criação e envio da sua arte. Elas podem mudar de acordo com o produto escolhido. Selecione a maneira como deseja criar seu material para que os próximos passos sejam disponibilizados.
-      </div>  
-  <section>
-            <div> 
-            <img src="/assets/images/home/bgbarra.jpg" width="370" height="2"> </div>
-  </section>
-          <form action="#" method="post">			
-        <div class="col-sm-4"><!--features_items-->
-          
-                  <div class="modal-content">
-                    <img src="/assets/images/home/Enviar.jpg" alt="" width="230">
-                      <div class="brands_products">
-                      <h4 class="brands_products"><input type="checkbox" name="check1" id="check1" onclick="nuevapagina('contrato.html')">
-Enviar minha arte</h4>
-                    </div>
-                  </div>
-        </div>
-        <div class="col-sm-4">
-                  <div class="modal-content">
-                    <img src="/assets/images/home/online.jpg" alt="">
-                      <div class="brands_products">
-                      <h4 class="brands_products"><input type="checkbox" name="check1" id="check1" onclick="nuevapagina('contrato.html')">
-Criar On-line</h4>
-                    </div>
-                  </div>
-        </div>					
-        <div class="col-sm-4">					
-                  <div class="modal-content">
-                    <img src="/assets/images/home/Cdesinger.jpg" alt="">
-                      <div class="brands_products">
-                      <h4 class="brands_products"><input type="checkbox" name="check1" id="check1" onclick="nuevapagina('contrato.html')">
-Contratar Criação</h4>
-                    </div>
-                  </div>
-          </div>
-        
-        </form>
-</div></div>
+<section>
+	<div class="container">
+		<div class="breadcrumbs">
+			<ol class="breadcrumb">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="Cartao.html">Cartao</a>
+				</li>
+				<li class="active">Configurar</li>
+			</ol>
+		</div>
+		<div id="contact-page" class="container" align="center">
+			<div>
+				<span>
+					<h2 class="productinfo">ESCOLHA A FORMA DE CRIAR SEU PRODUTO: CARTÃO DE VISITA</h2>
+				</span>
+			</div>
+			<div>
+				&nbsp;
+			</div>
+			<div class="alert-info btn-group-justified  fa fa-info-circle">
+				Nesta opção você pode encontrar três formas de criação e envio da sua arte. Elas podem mudar de acordo com o produto escolhido.
+				Selecione a maneira como deseja criar seu material para que os próximos passos sejam disponibilizados.
+			</div>
+			<section>
+				<div>
+					<img src="assets/images/home/bgbarra.jpg" width="370" height="2"> </div>
+			</section>
+			<form action="#" method="post">
+				<div class="col-sm-4">
+					<!--features_items-->
 
-<br>
-<br>
-<br>
+					<div class="modal-content">
+						<img src="assets/images/home/Enviar.jpg" alt="" width="230">
+						<div class="brands_products">
+							<h4 class="brands_products">
+								<input type="checkbox" name="check1" id="check1" (click)="exibeConfiguracoes(true)"> Enviar minha arte</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="modal-content">
+						<img src="assets/images/home/online.jpg" alt="">
+						<div class="brands_products">
+							<h4 class="brands_products">
+								<input type="checkbox" name="check1" id="check1" onclick="nuevapagina('contrato.html')"> Criar On-line</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="modal-content">
+						<img src="assets/images/home/Cdesinger.jpg" alt="">
+						<div class="brands_products">
+							<h4 class="brands_products">
+								<input type="checkbox" name="check1" id="check1" onclick="nuevapagina('contrato.html')"> Contratar Criação</h4>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</section>
+<section>
+	<div>
+		<img src="assets/images/home/bgbarra.jpg" width="370" height="2">
+	</div>
+</section>
+<section>
+	<div class="">
+
+	</div>
+</section>
+<section>
+	<div class="">
+
+	</div>
+</section>
+<section class="alert-link">
+	<div>
+		<div class="col-md-offset-1">
+			<h2>
+				<img src="assets/images/home/dois.jpg" width="40" height="40"> Selecione as opções</h2>
+			<div *ngIf="exibirDivs">
+
+				<!-- Formato -->
+				<div class="options">
+					<div class="ttlin">
+						<span class="h3 ng-binding">Formato</span>
+					</div>
+					<ul class="white ulin">
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-90x50.jpg" alt="Cartão de Visita - 90 x 50 mm" title="Cartão de Visita - 90 x 50 mm">
+							</div>
+							<div class="optselect active">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">90 x 50 mm</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-50x50.jpg" alt="Cartão de Visita - 50 x 50 mm" title="Cartão de Visita - 50 x 50 mm">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">50 x 50 mm</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-85x55.jpg" alt="Cartão de Visita - 85 x 55 mm" title="Cartão de Visita - 85 x 55 mm">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">85 x 55 mm</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-80x50.jpg" alt="Cartão de Visita - 80 x 50 mm" title="Cartão de Visita - 80 x 50 mm">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">80 x 50 mm</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/imagem-indisponivel-semtexto.jpg">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Personalizar</label>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+				<!-- Impressão -->
+				<div class="options">
+					<div class="ttlin">
+						<span class="h3 ng-binding">Impressão</span>
+					</div>
+					<ul class="white ulin">
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-90x50.jpg" alt="Cartão de Visita - 90 x 50 mm" title="Cartão de Visita - 90 x 50 mm">
+							</div>
+							<div class="optselect active">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Frente</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-50x50.jpg" alt="Cartão de Visita - 50 x 50 mm" title="Cartão de Visita - 50 x 50 mm">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Frente e verso</label>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+				<!-- Papel -->
+				<div class="options">
+					<div class="ttlin">
+						<span class="h3 ng-binding">Papel</span>
+					</div>
+					<ul class="white ulin">
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-offset240g.jpg" alt="Cartão de Visita - Offset 240g" title="Cartão de Visita - Offset 240g">
+							</div>
+							<div class="optselect active">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Offset 240g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-reciclato240.jpg" title="Cartão de Visita - Reciclato 240g" alt="Cartão de Visita - Reciclato 240g"
+								 title="Cartão de Visita - Reciclato 240g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Reciclato 240g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-couchebrilho250.jpg" title="Cartão de Visita - Couché Brilho 250g" alt="Cartão de Visita - Couché Brilho 250g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Brilho 250g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-couchefosco250.jpg" title="Cartão de Visita - Couché Fosco 250g" alt="Cartão de Visita - Couché Fosco 250g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Fosco 250g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-couchebrilho300.jpg" title="Cartão de Visita - Couché Brilho 300g" alt="Cartão de Visita - Couché Brilho 300g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Brilho 300g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-couchefosco300.jpg" title="Cartão de Visita - Couché Fosco 300g" alt="Cartão de Visita - Couché Fosco 300g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Fosco 300g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/couche-brilho-350g.jpg" title="Cartão de Visita - Couché Brilho 350g" alt="Cartão de Visita - Couché Brilho 350g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Brilho 350g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/couche-fosco-350g.jpg" title="Cartão de Visita - Couché Fosco 350g" alt="Cartão de Visita - Couché Fosco 350g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Couché Fosco 350g</label>
+							</div>
+						</li>
+
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/silverprint-330g.jpg" title="Cartão de Visita - Silverprint 330g" alt="Cartão de Visita - Silverprint 330g">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Silverprint 330g</label>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+				<!-- Acabamento -->
+				<div class="options">
+					<div class="ttlin">
+						<span class="h3 ng-binding">Acabamento</span>
+					</div>
+					<ul class="white ulin">
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-laminacaofosca.jpg" alt="Cartão de Visita - Refile" title="Cartão de Visita - Refile">
+							</div>
+							<div class="optselect active">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label class="ng-binding">Refile</label>
+							</div>
+						</li>
+						<li class="blk-in-2">
+							<div class="image option-image">
+								<i class="lupa"></i>
+								<img src="assets/images/cartao/fbcard-cantosarredondadoslaminacaofosca-1-.jpg" title="Cartão de Visita - Cantos Arredondados"
+								 alt="Cartão de Visita - Cantos Arredondados" title="Cartão de Visita - Cantos Arredondados">
+							</div>
+							<div class="optselect">
+								<input type="radio" name="valor">
+								<div class="check"></div>
+								<label>Cantos Arredondados</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="">
+
+	</div>
+</section>
+<section class="alert-link">
+	<div>
+		<div class="col-md-offset-1">
+			<h2>
+				<img src="assets/images/home/tres.jpg" width="40" height="40"> Calcule o frete e a previsão de entrega</h2>
+			<div *ngIf="exibirDivs">
+
+				<section class="calculo">
+					<ul class="blk-3 calculo white ng-scope" ng-if="locale.is('BR') &amp;&amp; is_pickup_places">
+						<li class="blk-in-2" style="border: 1px solid #dbdddf;">
+							<div class="optselect active" ng-class="{'active': !use_pickup_places}" (click)="selectShipingPlace(false)">
+								<input type="radio" name="use_pickup_places">
+								<div class="check"></div>
+								<label> Entrega</label>
+							</div>
+						</li>
+						<li class="blk-in-2" style="border: 1px solid #dbdddf;">
+							<div class="optselect" ng-class="{'active': use_pickup_places}" (click)="selectShipingPlace(true)">
+								<input type="radio" name="use_pickup_places">
+								<div class="check"></div>
+								<label>Retira</label>
+							</div>
+						</li>
+					</ul>
+					<div *ngIf="exibirDivCep">
+						<ul class="white ulin ng-scope" ng-if="locale.is('BR') &amp;&amp; is_pickup_places">
+							<li class="cep">
+								<label>Digite seu CEP</label>
+								<input type="text" id="digitocep" name="cep" ng-model="zipcode" maxlength="9" mask="99999-999" ng-keyup="validateZipcode(zipcode, $event)"
+								 ng-disabled="matrixIsLoading" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength">
+								<button type="button" class="green buttonleft refresh-zip" ng-click="validateZipcode(zipcode)" ng-disabled="matrixIsLoading || false === zipIsValid">
+									<span class="btn-label">OK</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<div *ngIf="exibirDivRetirada">
+						<ul class="white ulin ng-scope" ng-if="locale.is('BR') &amp;&amp; is_pickup_places">
+							<li ng-if="use_pickup_places" class="use_pickup_places ng-scope">
+								<div>
+									<label class="ttlin h3">Selecione uma unidade para retirada</label>
+									<select name="cep" ng-model="pickupPlace" ng-change="selectPickupPlace(pickupPlace)" ng-options="pickupPlace as pickupPlace.inlineAddress for pickupPlace in addresses_pickup_places"
+									 validation="required" class="ng-pristine ng-valid ng-not-empty ng-valid-validation ng-touched">
+										<option value="?" selected="selected"></option>
+										<option label="SP - Faria Lima - Av. Brigadeiro Faria Lima, 1755. Jardim Paulistano. São Paulo- SP" value="object:290">SP - Faria Lima - Av. Brigadeiro Faria Lima, 1755. Jardim Paulistano. São Paulo- SP</option>
+										<option label="RJ - Centro - Rua Buenos Aires, 334. Centro. Rio de Janeiro- RJ" value="object:291">RJ - Centro - Rua Buenos Aires, 334. Centro. Rio de Janeiro- RJ</option>
+										<option label="RJ - Barra - Avenida Ayrton Senna, 5500. Jacarepaguá. Rio de Janeiro- RJ" value="object:292">RJ - Barra - Avenida Ayrton Senna, 5500. Jacarepaguá. Rio de Janeiro- RJ</option>
+										<option label="SP - Vila Leopoldina - Av. Cardeal Santiago Luiz Copello, 221. Vila Ribeiro de Barros. São Paulo- SP" value="object:293">SP - Vila Leopoldina - Av. Cardeal Santiago Luiz Copello, 221. Vila Ribeiro de Barros. São Paulo- SP</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- CALCULO DO FRETE -->
+					<div>
+						
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="">
+		<img src="assets/images/home/bgbarra.jpg" width="370" height="2"> </div>
+</section>
+<section>
+	<div class="">
+
+	</div>
+</section>

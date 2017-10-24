@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigCartaoComponent implements OnInit {
 
+  private exibirDivs: boolean = true;
+  private exibirDivCep: boolean = true;
+  private exibirDivRetirada: boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  exibeConfiguracoes(opcao){
+    if(opcao)
+      this.exibirDivs = opcao; 
+  }
+
+  selectShipingPlace(opcao){
+    if(opcao){
+      this.exibirDivCep = false;
+      this.exibirDivRetirada = true;
+    }else{
+      this.exibirDivRetirada = false;
+      this.exibirDivCep = true;
+    }
+    
   }
 
 }

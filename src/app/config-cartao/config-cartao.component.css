@@ -1,0 +1,385 @@
+.options {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 93%;
+}
+
+.ttlin {
+    width: 100%;
+    height: 64px;
+}
+
+.ulin {
+    overflow: hidden;
+}
+
+.white {
+    background: #fff;
+}
+
+.ulin .blk-in-2 {
+    font-size: 16px;
+    font-family: Open Sans Regular;
+    font-weight: 700;
+    width: 179px;
+}
+
+i.lupa {
+    background: url(/assets/final/img/sprites.png);
+    width: 29px;
+    height: 30px;
+    background-position: -477px 89px;
+    margin-left: 73px;
+    margin-top: 75px;
+    position: absolute;
+    display: none;
+}
+
+.image {
+    background: #fff;
+    height: 180px;
+    position: relative;
+}
+
+.option-image img {
+    max-width: 179px;
+    max-height: 179px;
+}
+
+.Qty-input.active, .box.active .opt, .entrega ul li.active, .entrega ul li.active .un, .extra-input.active, .optselect.active, button.active, li.quantidade ul li.active {
+    background: #006ee3!important;
+    color: #fff!important;
+}
+
+.optselect {
+    display: table;
+    width: 180px;
+    cursor: pointer;
+}
+
+/* input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+} */
+/* 
+button, input {
+    -webkit-appearance: none!important;
+}
+
+input[type="radio" i]{
+    margin: 3px 3px 0px 5px;
+} */
+/* 
+.options .check {
+    margin-top: 10px;
+}
+
+
+.active .check {
+    background: url(/assets/images/cartao/check.png);
+    background-position: -508px -129px;
+} */
+
+/* .cadd .check, .matrix-mobile td div.check, .opt .check, .options .check {
+    content: '';
+    width: 34px;
+    height: 34px;
+    border: 1px solid #dbdddf;
+    background: #fff;
+    display: block;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+
+.check {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #dbdddf;
+    background: #fff;
+    display: block;
+    border-radius: 100%;
+    margin-bottom: 10px;
+} */
+
+.optselect label {
+    display: table-cell;
+    margin-left: 62px;
+    margin-top: 11px;
+    width: 120px;
+    height: 58px;
+    vertical-align: middle;
+    position: relative;
+    font-size: 22.4px!important;
+    font-size: 1.4rem!important;
+}
+
+.optselect label {
+    display: table-cell;
+    margin-left: 62px;
+    margin-top: 11px;
+    width: 120px;
+    height: 58px;
+    vertical-align: middle;
+    position: relative;
+    font-size: 22.4px!important;
+    font-size: 1.4rem!important;
+}
+
+.optselect label {
+    display: table-cell;
+    margin-left: 62px;
+    margin-top: 11px;
+    width: 120px;
+    height: 58px;
+    vertical-align: middle;
+    position: relative;
+    font-size: 22.4px!important;
+    font-size: 1.4rem!important;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+.blk-in-2 {
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.selecione .blk-in-2 {
+    cursor: pointer;
+}
+
+.options .blk-in-2 {
+    border: 1px solid #dbdddf;
+    border-radius: 3px;
+}
+
+.maisinfo {
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.entrega p.mon, .entrega p.num, .maisinfo, .settings .video {
+    color: #006ee3;
+}
+
+.ulin .blk-in-2 {
+    font-size: 16px;
+    font-family: Open Sans Regular;
+    font-weight: 700;
+}
+
+.options .blk-in-2 {
+    border: 1px solid #dbdddf;
+    border-radius: 3px;
+}
+
+.calculo .alert, .settings .calculo .cep {
+    width: 761px;
+}
+
+.calculo .cep label {
+    float: none;
+    clear: both;
+    display: block;
+    height: 35px;
+}
+
+.calculo .cep input[type=tel], .settings .calculo .cep input[type=text], li.custom-quantity.container input.newqty {
+    background: #f8f8f8;
+    border: 1px solid #dbdddf;
+    border-radius: 3px;
+    padding: 20px;
+    float: left;
+    width: 80px;
+    height: 4px;
+    margin-top: 9px;
+}
+
+.calculo .cep button.refresh-zip span.btn-label {
+    color: #fff;
+    position: static;
+    top: 0;
+    clear: both;
+}
+
+.blk-3 {
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+button.green:enabled {
+    background: #36c265;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    outline: 0;
+}
+
+.green {
+    background: #36c265;
+    color: #fff;
+}
+
+.calculo .cep button.refresh-zip {
+    height: 44px;
+    margin-left: 15px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.calculo .cep input[type=text], li.custom-quantity.container input.newqty {
+    background: #f8f8f8;
+    border: 1px solid #dbdddf;
+    border-radius: 3px;
+    padding: 20px;
+    float: left;
+    width: 150px;
+    height: 4px;
+    margin-top: 9px;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+.calculo .ttlin, .settings .opcoes .ttlin {
+    width: 100%;
+    height: 64px;
+}
+
+.options, li.custom-quantity-toggle {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 93%;
+}
+
+.matrix {
+    overflow: hidden;
+    width: 775px;
+}
+
+.matrix .fastestshipping {
+    background: url(/assets/final/img/fastestshipping.jpg);
+    width: 155px;
+    height: 31px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 2px;
+}
+
+.matrix li {
+    float: none;
+}
+
+li.frete {
+    float: left;
+    background: #36c265;
+    height: 27px;
+    margin-left: 618px;
+    width: 155px;
+    border-radius: 4px 4px 0 0;
+    padding-top: 5px;
+    border: 1px solid #dbdddf;
+    text-align: center;
+    border-bottom: 0;
+}
+
+.frete span:nth-child(1) {
+    color: #fff;
+    margin-right: 4px;
+}
+
+.frete span:nth-child(2) {
+    color: #f4dd1d;
+}
+
+.matrix li.quantidade {
+    float: left;
+    width: 155px;
+}
+
+.matrix .quantidade .ship {
+    width: 154px;
+    height: 90px;
+}
+
+.matrix .quantidade .ship i {
+    width: 75px;
+    height: 49px;
+    display: block;
+    background: url(/assets/final/img/sprites.png);
+    background-position: -165px -40px;
+    margin: 0 auto;
+    position: relative;
+    top: 14px;
+}
+
+.matrix .quantidade .tabttl {
+    border-right: 0;
+}
+
+.tabttl {
+    background: #eee;
+    border: #dbdddf solid 1px;
+    border-radius: 3px 0 0 0;
+    color: #6a6f7a;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.matrix .quantidade li:nth-child(2n+3), .matrix .quantidade li:nth-child(2n+4) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-left: 1px solid #dbdddf;
+}
+
+.matrix .quantidade .num {
+    margin-left: 32px;
+}
+
+.entrega p.num, .infocliente span, .matrix .quantidade .num, .matrix-mobile .quantidade .num {
+    font-family: 'Open Sans SemiBold';
+}
+
+.matrix .quantidade li:nth-child(2n+3), .matrix .quantidade li:nth-child(2n+4) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-left: 1px solid #dbdddf;
+}
+
+.matrix .entrega ul li:nth-child(2n-1), .matrix .quantidade li:nth-child(2n+4) {
+    background: #f9f9f9;
+}
+
+.ulin {
+    overflow: hidden;
+}
+
+.accordion .ttl, .options, li.custom-quantity-toggle {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 93%;
+}
+
+
+
+
