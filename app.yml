@@ -1,10 +1,13 @@
 # [START runtime]
-runtime: python27
-threadsafe: yes
+runtime: nodejs
+env: flex
 # [END runtime]
 
+env_variables:
+  API_KEY: AIzaSyDuMn7xJmW1jnU2dGf7kDYLw9wyUstm0HI
+
 manual_scaling:
-      instances: 1
+  instances: 1
       
 handlers:
 
