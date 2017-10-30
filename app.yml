@@ -3,6 +3,9 @@ runtime: python27
 threadsafe: yes
 # [END runtime]
 
+manual_scaling:
+      instances: 1
+      
 handlers:
 
 - url: /(.+)
